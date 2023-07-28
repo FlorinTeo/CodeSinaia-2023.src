@@ -154,7 +154,7 @@ public class SrvTabletsOfStone {
         }
         Queue<MsgTabletsOfStone> msgQueue = _msgQueues.get(to);
         if (message.getData().length() > 6)
-            return new MsgTablesOfStone(0, "[Err] Invalid message length!");
+            return new MsgTabletsOfStone(0, "[Err] Invalid message length!");
         msgQueue.add(message);
         return new MsgTabletsOfStone(0, "[Success] OK!");
     }
