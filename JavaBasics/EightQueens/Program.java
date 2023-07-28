@@ -26,7 +26,7 @@ public class Program {
                 if (_board[rR][rC] == 0) {
                     updateBoard(rR, rC, 1);
                     if  (nQueen == 8 || placeQueen(nQueen+1)) {
-                        // trick: as we're on a straight backgrack,
+                        // trick: as we're on a straight backtrack,
                         // switch this queen's position to it's counter
                         // as a negative number to disambiguate from the
                         // other markings when printing the board.
